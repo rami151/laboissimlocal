@@ -24,7 +24,7 @@ export async function apiFetch(url: string, options: RequestInit = {}) {
 export async function refreshToken() {
   const refresh = typeof window !== 'undefined' ? localStorage.getItem('refresh') : null;
   if (!refresh) return null;
-  const res = await fetch('http://127.0.0.1:8000/api/token/refresh/', {
+  const res = await fetch('http://127.0.0.1:8000/api/token/refresh', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ refresh }),

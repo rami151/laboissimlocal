@@ -209,6 +209,7 @@ export default function LoginPage() {
           <div className="text-xs text-slate-500 space-y-1">
             <p>👤 Membre : member@research.com / member123</p>
             <p>👑 Admin : admin@research.com / admin123</p>
+            <p>👑 chef d'equipe : leader@research.com / leader123</p>
           </div>
         </motion.div>
       </motion.div>

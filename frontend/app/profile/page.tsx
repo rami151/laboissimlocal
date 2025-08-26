@@ -211,7 +211,7 @@ export default function ProfilePage() {
       if (profileImage) {
         // Use FormData for file upload
         const token = localStorage.getItem('token')
-        const response = await fetch('http://localhost:8000/api/user/profile/', {
+        const response = await fetch('http://localhost:8000/api/user/profile', {
           method: 'PATCH',
           headers: {
             'Authorization': `Bearer ${token}`,
